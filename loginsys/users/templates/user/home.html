@@ -1,0 +1,9 @@
+{% include 'user/base.html' %}
+{% block main_content %}
+<div>
+    <span>Hello{{request.user}},<a href="{% url 'logout' %}">logout</a></span>
+</div>
+<h1><a href="{% url 'register' %}">Register</a></h1>
+<h1><a href="{% url 'login' %}">Login</a></h1>
+{% endblock main_content %}
+
